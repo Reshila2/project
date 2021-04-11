@@ -36,6 +36,7 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
+            'driver'=>env('MAIL_FRIVER','sendmall'),
             'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
@@ -98,6 +99,9 @@ return [
     | of the emails. Or, you may simply stick with the Laravel defaults!
     |
     */
+    'encription'=>env('MAIL_ENCRYPTION','tls'),
+    'username'=>env('MAIL_USERNAME'),
+    'password'=>env('MAIL_PASSWORD'), 
 
     'markdown' => [
         'theme' => 'default',
