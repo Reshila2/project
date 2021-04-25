@@ -1,4 +1,10 @@
 
+  $(document).ready(function(){
+    $('.your-class').slick({
+      setting-name: setting-value
+    });
+  });
+
 function triggerClick(){
 document.querySelector('#profileImage').click(); 
 }

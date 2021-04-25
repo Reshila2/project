@@ -10,17 +10,20 @@ class SendEmailController extends Controller
 {
     //
     function index(){
-        return view('send_email');
+        return view('home');
     }
     function send(Request $request){
         $this->validate($request,[
             'name'  =>  'required',
             'email' =>  'required|email',
+            'subject' => 'required',
             'message'   =>  'required'
         ]);
         $data=array(
             'name' =>$request->name,
-            'message'=>$request->message
+            'email'=>$request->email,
+            'message'=>$request->message,
+            'subject'=>$request->subject
         );
         Mail::to('alisher.izzatullyev@gmail.com')->send(new SendMail($data));
         return back()->with('success','thanks for contacting us');

@@ -1,7 +1,7 @@
 <?php
     return[
         'edu_site'=>'EduCenter',
-        'mainP'=>'Home',
+        'home'=>'Home',
         'unt'=>'UNT',
         'posSide'=>'Advantages',
         'about_us'=>'About us',

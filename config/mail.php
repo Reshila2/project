@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER', 'smtp'),
+    'default' => env('MAIL_MAILER', 'mailgun'),
 
     /*
     |--------------------------------------------------------------------------
@@ -85,8 +85,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', '190103370@stu.sdu.edu.kz'),
+        'name' => env('MAIL_FROM_NAME', 'Educenter'),
     ],
 
     /*
@@ -100,8 +100,8 @@ return [
     |
     */
     'encription'=>env('MAIL_ENCRYPTION','tls'),
-    'username'=>env('MAIL_USERNAME'),
-    'password'=>env('MAIL_PASSWORD'), 
+    'username'=>env('190103370@stu.sdu.edu.kz'),
+    'password'=>env('46394822'), 
 
     'markdown' => [
         'theme' => 'default',

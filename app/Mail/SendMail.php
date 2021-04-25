@@ -3,24 +3,24 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
 class SendMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $details;
+    public $data;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($details)
+    public function __construct($data)
     {
         //
-        $this->details= $details;
+        $this->data= $data;
     }
 
     /**
@@ -32,8 +32,8 @@ class SendMail extends Mailable
     {
         return $this->from('alisher.izzatullyev@gmail.com')
         ->subject('new customer')
-        ->view('emails.TestMail')
-        ->with('details',$this->details
+        ->view('dynamic_email_template')
+        ->with('data',$this->data
         );
     }
 }

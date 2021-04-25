@@ -8,29 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <style></style>
 </head>
-<section>
-    <canvas id="myChart1" width="400px" height="80px" style></canvas>
-   
-</section>
-<section>
-    <canvas id="myChart2" width="300px" height="80px" style="margin-top:;"></canvas> 
-</section>
-<section>
-    <canvas id="myChart3" width="400px" height="80px" style="margin-top:;"></canvas> 
-
-</section>
+<canvas id="myChart1" width="400px" height="80px" style></canvas>
 <body>
-    <script>
-        var ctx=document.getElementById("myChart1");
+<script>
+ var ctx=document.getElementById("myChart1");
         var myChart1=new Chart(ctx,{
             type:'bar',
             data:{
                 labels:["August","September","October","November","December"],
                 datasets:[
-                    {label:"Number of studied students",
-                    data:[10,80,90,75,100],
+                    {label:"Number of people died from coronovirus in Turkistan ,Kazakhstan",
+                    data:[0,20,30,45,100],
                     backgroundColor:['rgba(255,129,102,1)',
                     'rgba(234,162,235,1)',
                     'rgba(255,206,36,1)',
@@ -51,44 +40,6 @@
     }
     },
 })
-var ctx=document.getElementById("myChart2");
-        var myChart2=new Chart(ctx,{
-            type:'pie',
-            data:{
-                labels:["math","biology","chemistry","other"],
-                datasets:[
-                    {label:"Additionally subjects",
-                    data:[35,15,10,40],
-                    backgroundColor:['rgba(255,129,102,1)',
-                    'rgba(234,162,235,1)',
-                    'rgba(255,206,36,1)',
-                    'rgba(75,192,192,1)',
-                    'rgba(153,102,255,1)',
-                    
-
-                ],
-            }
-        ]
-    },
-    options2:{
-        scales:{yAxes:[{
-            ticks:{
-                beginAtZero:false
-            }
-        }]
-    }
-    },
-})
-var ctx=document.getElementById("myChart3");
-        var myChart3=new Chart(ctx,{
-            type:'line',
-            data:{
-                labels:["August","September","October","November","December"],
-                datasets:[
-                    {label:"NAverage points from UNT",
-                    data:[65,58,80,75,90],
-                    "fill":false,"borderColor":"rgb(75,192,192)","lineTension":0.1}]},
-            "options":{}});
 </script>
 
 </body>

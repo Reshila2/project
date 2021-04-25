@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="news.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">DesignX</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </nav>
+        <section class="a1"></section>
+          <section class="firstPage" >
+    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/book-quotes-1531945007.jpg?crop=1.00xw:0.753xh;0,0.247xh&resize=1200:*" class="img-responsive" id="backImg" alt="">
+    <div class="text-block">
+      <p style="font-size:3vw;" class="lang" key="text1">Выиграй грант в университет мечты!</p>
+      <p style="font-size:2.5vw;" class="lang" key="text2">Образование и не только.</p>
+    </div>
+    <button class="open-button lang"  key="more" onclick="openForm()">Подробнее</button>
+    <div class="form-popup" id="myForm">
+      <button type="button" style="float: right;" class="btn cancel" onclick="closeForm()">Х</button>
+      <form action="/action_page.php" class="form-container">
+        <h1 style="font-size:1.6vw;margin-top: -0.3vw;float: left;" class="lang" key="forma1">Ответим на все вопросы
+        </h1>
+        <hr>
+        <label for="name" class="lang" key="forma2"><b>Имя</b></label>
+        <input type="text" class="lang" key="forma22" placeholder="Ваше имя" name="name" required>
+        
+        <label for="phone" class="lang" key="forma3"><b>Электронная почта</b></label>
+        <input type="text" class="lang" key="forma33" placeholder="example@example.com" name="phone" required>
+        <button type="button" class="btn btn-info lang"  key="forma4">Отправить</button>
+      </form>
+    </div>
+  </section>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+<script src="script1.js"></script>
+</body>
+</html>
